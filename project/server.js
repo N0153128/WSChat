@@ -18,9 +18,6 @@ function broadcast(msg) {
  };
 
 
-
-
-
  server.username = function() {
     let noun = ['Bunny', 'Kitten', 'Ram', 'Wolf', 'Fox'];
     let adjective = ['Wise', 'Smart', 'Clever', 'Bright', 'Creative'];
@@ -32,7 +29,17 @@ function broadcast(msg) {
         username = username.toString().replace(/,/g, ' ');
         return username;
     };
-    return makeID;
+    return makeID();
+}
+
+function messageHandler(server, data) {
+    let message = JSON.parse(data);
+    if (message.length > 0 && message.length < 100) {
+        let prop = `${server.id}: ${message}`;
+        console.log(prop);
+        broadcast(prop);
+    }
+
 }
 
 server.on('connection', function connection(wss, req) {
@@ -48,18 +55,11 @@ server.on('connection', function connection(wss, req) {
     }, 5000);
     wss.on('pong', heartbeat);
     wss.on('error', console.error);
-    broadcast('client connected')
+    broadcast(`${wss.id} connected`)
     console.log('client connected')
 
     wss.on('message', function incoming(message) {
-        // message.toJSON;
-        // let clientMessage = JSON.parse(message).message;
-        // let prop = `${wss.id}: ${clientMessage}`
-        message.toJSON;
-        let cleintMessage = JSON.parse(message).message;
-        let prop = `${wss.id}: ${cleintMessage}`;
-        console.log(message);
-        broadcast(prop)
+        messageHandler(wss, message);
     });
 
     server.on('close', function() {

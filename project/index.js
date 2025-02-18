@@ -6,6 +6,9 @@ let msgText;
 
 // hello.innerHTML = 'hello';
 
+inputField.value = '';
+msgText = '';
+
 function displayMessage(msg) {
     outputField.append(document.createElement('br'));
     outputField.append(msg);
@@ -14,6 +17,7 @@ function displayMessage(msg) {
 
 function sendMsg() {
     socket.send(JSON.stringify(msgText));
+    inputField.value = ''; msgText = '';
 }
 
 inputField.addEventListener('input', updateValue);
@@ -23,7 +27,7 @@ function updateValue(e) {
 
 const socket = new WebSocket('ws://localhost:8282');
 socket.onopen = function(event) {
-    outputField.append('WebChat is running');
+    outputField.append('WSChat is running');
 };
 
 socket.onmessage = function(event) {
