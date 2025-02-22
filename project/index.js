@@ -10,9 +10,9 @@ inputField.value = '';
 msgText = '';
 
 function displayMessage(msg) {
-    outputField.append(document.createElement('br'));
-    outputField.append(msg);
-    outputField.append(document.createElement('br'));
+    outputField.prepend(document.createElement('br'));
+    outputField.prepend(msg);
+    outputField.prepend(document.createElement('br'));
 };
 
 function sendMsg() {

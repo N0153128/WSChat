@@ -8,21 +8,47 @@
 </head>
 
 <body>
-<!-- <div class="kek" id="kek">
-    Hello World
-</div> -->
+    <div class="container">
+        <div class="banner">
+            <h1>WSChat</h1>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-info about-button" data-bs-toggle="modal" data-bs-target="#aboutModal">About</button>
+            
+        </div>
+    </div>
 
-<!-- <label>Chat:</label> -->
+<div class="col-2"></div>
+<div class="col-8"></div>
 <div class="outputField" id="outputField">
     
 </div>
 
-
-
 <div class="chat-input" id="chat-input">
-<input type="text" class="inputField" id="inputField">
-<button class="sendBtn" id="sendBtn" onclick="sendMsg()">Send</button>
+<textarea class="inputField" id="inputField" placeholder="Type your message here"></textarea>
+<br/>
+<button class="btn btn-secondary sendBtn" id="sendBtn" onclick="sendMsg()">Send</button>
 </div>
+
+<div class="col-2"></div>
+</div>
+
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content about-modal">
+
+        <div class="modal-body">
+          WSChat, or WebSocket Chat is a web-based chat application designed to facilitate real-time communication.
+            <br/>
+          Check out the source code on <a href="https://github.com/N0153128/WSChat">GitHub</a>
+          or visit the <a href="https://n0153.tech/">developer's website</a> for more information.
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 <script src="index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

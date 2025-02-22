@@ -1,4 +1,4 @@
-body{
+body, .container{
     background-color: #000;
     color: white;
     font-size: 20px;
@@ -10,6 +10,8 @@ body{
 .outputField{
     display: block;
     margin: auto;
+    width: 75%;
+
 }
 
 .chat-input{
@@ -17,4 +19,32 @@ body{
     display: block;
     margin: auto;
     bottom: 0;
+    border: 1px solid #000;
+    border-radius: 50px;
+    width: 50%;
+}
+
+.inputField{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.sendBtn{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about-modal{
+    opacity: 0.8;
+    background-color: #c0c0c0;
+    color: #000;
+}
+
+.about-button{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border: 1px solid #000;
+    border-radius: 50px;
+    width: 10%;
 }
