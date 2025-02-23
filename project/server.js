@@ -34,7 +34,7 @@ function broadcast(msg) {
 
 function messageHandler(server, data) {
     let message = JSON.parse(data);
-    if (message.length > 0 && message.length < 60) {
+    if (message.length > 0 && message.length < 150) {
         let prop = `${server.id}: ${message}`;
         console.log(prop);
         broadcast(prop);
