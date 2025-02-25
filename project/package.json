@@ -4,12 +4,14 @@
   "description": "Open Web Chat built with JavaScript",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "devDependencies": {"babel-cli": "^6.14.0"},
+  
   "dependencies": {
     "bootstrap": "^5.3.3",
     "ws": "^8.18.0"
