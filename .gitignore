@@ -1,3 +1,4 @@
 deck/
 pull_from_deck.sh
 project/node_modules/
+project/react-ref/
