@@ -1,4 +1,7 @@
-import Card from './card';
+import Post from './fragments/post';
+import Demo from './fragments/chSample';
+import Navbar from './fragments/navbar';
+import { Container } from '@chakra-ui/react';
 
 
 function Header({ title }) {
@@ -9,14 +12,11 @@ export default function HomePage() {
   const names = ['Articles', 'Experiments', 'Quality']; 
  
   return (
-    <div>
-      <Header title="Welcome to my mini blog" />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
-      <Card />
-    </div>
+    <Container>
+      <Navbar />
+
+      {/* <Demo /> */}
+      <Post />
+    </Container>
   );
 }
