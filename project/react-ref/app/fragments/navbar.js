@@ -14,44 +14,24 @@ export default function Navbar() {
                     <Breadcrumb.List>
                         <Breadcrumb.Item>
                             <Breadcrumb.Link href="#">
-                                N0153
+                                VoidBot
                             </Breadcrumb.Link>
                         </Breadcrumb.Item>
                         <Breadcrumb.Separator />
-
-                        <Breadcrumb.Item>
-                            <Breadcrumb.Link href="#">
-                                Home <VscHome />
-                            </Breadcrumb.Link>
-                        </Breadcrumb.Item>
-                        <Breadcrumb.Separator />   
 
                         <Breadcrumb.Item>
                             <Breadcrumb.Link href="#"> 
-                                About <GiInfo />
+                                Docs <GiInfo />
                             </Breadcrumb.Link>
                         </Breadcrumb.Item>
                         <Breadcrumb.Separator />
 
                         <Breadcrumb.Item>
-                            <Breadcrumb.Link href="#">
-                                Blog <PiGitlabLogoSimpleFill />
+                            <Breadcrumb.Link href="https://github.com/N0153128/VoidBot">
+                                Source <FaGithub />
                             </Breadcrumb.Link>
                         </Breadcrumb.Item>
-                        <Breadcrumb.Separator />
 
-                        <Breadcrumb.Item>
-                            <Breadcrumb.Link href="#">
-                                Projects < FaGithub/>
-                            </Breadcrumb.Link>
-                        </Breadcrumb.Item>
-                        <Breadcrumb.Separator />
-
-                        <Breadcrumb.Item>
-                            <Breadcrumb.Link href="#">
-                                Demos <GrTest />
-                            </Breadcrumb.Link>
-                        </Breadcrumb.Item>
                     </Breadcrumb.List>
                 </Breadcrumb.Root>
             </Center>

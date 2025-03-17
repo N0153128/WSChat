@@ -1,6 +1,7 @@
 import Post from './fragments/post';
 import Demo from './fragments/chSample';
 import Navbar from './fragments/navbar';
+import InfoPane from './fragments/infoPane';
 import { Container } from '@chakra-ui/react';
 
 
@@ -14,7 +15,7 @@ export default function HomePage() {
   return (
     <Container>
       <Navbar />
-
+      <InfoPane />
       {/* <Demo /> */}
       <Post />
     </Container>

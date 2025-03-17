@@ -7,7 +7,7 @@ export default function Post() {
     let id = 0;
       let markup = (
         <Stack>
-      <Card.Root size="sm" p="2" m="2">
+      <Card.Root size="sm" p="2" m="2" background={"gray.900/0"} borderTop="None" borderLeft="None" borderRight="None">
         <Card.Header>
             <Heading>Void Bot</Heading>
             </Card.Header>
@@ -20,18 +20,7 @@ export default function Post() {
                 <Code>Nulla nec leo leo. Proin tristique diam nec ligula euismod</Code> posuere. Sed dapibus nunc non libero 
                 mattis, sed cursus ex ullamcorper. Aenean ut enim sed massa aliquet commodo. Mauris vehicula et
                  magna vitae pharetra. 
-                 <Blockquote.Root><Blockquote.Content>
-                 Nullam venenatis dui orci. Nulla facilisi. Nullam eget lacus at magna tempor faucibus
-                  sed ac velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec 
-                  tristique congue rutrum. Aliquam eu nisl felis. Nam ligula mi, cursus quis risus sed,
-                   viverra finibus risus. Etiam volutpat sit amet orci eget eleifend. Aenean interdum 
-                   quam id arcu tristique, id posuere nibh malesuada. Donec hendrerit lectus tortor, 
-                   id pharetra libero sodales vehicula. Etiam in molestie lectus. Duis convallis porttitor
-                    dui eget pretium. Nunc sit amet venenatis libero. Suspendisse in magna malesuada 
-                    metus ornare aliquam non ac lacus. Mauris enim mauris, lacinia a tincidunt 
-                    consectetur, porttitor dignissim leo. Cras tempus leo eu erat aliquam, consectetur 
-                    tristique erat fringilla. 
-                  </Blockquote.Content></Blockquote.Root>
+
            </Text>
                 <br />
         </Card.Body>
@@ -40,7 +29,7 @@ export default function Post() {
         </Stack>
         
     );
-    for(let i=0; i<3; i++){
+    for(let i=0; i<2; i++){
         arr.push(markup);
     }
     return arr;
