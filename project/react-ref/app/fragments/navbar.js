@@ -10,7 +10,7 @@ export default function Navbar() {
         <Center fontWeight="xl">
         <Box background="gray.900" width="100%" height="40px" rounded="sm" m="2" p="2">
             <Center>
-                <Breadcrumb.Root>
+                <Breadcrumb.Root size="lg">
                     <Breadcrumb.List>
                         <Breadcrumb.Item>
                             <Breadcrumb.Link href="#">

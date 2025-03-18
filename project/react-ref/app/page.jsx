@@ -13,7 +13,7 @@ export default function HomePage() {
   const names = ['Articles', 'Experiments', 'Quality']; 
  
   return (
-    <Container>
+    <Container maxW="3xl" px="2">
       <Navbar />
       <InfoPane />
       {/* <Demo /> */}
