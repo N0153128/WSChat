@@ -1,5 +1,5 @@
 'use client';
-import { HStack, Button, Stack, Card, Heading, Text, Code, Blockquote, Link, Kbd } from '@chakra-ui/react';
+import { HStack, Button, Stack, Card, Heading, Text, Code, Blockquote, Link, Kbd, Image } from '@chakra-ui/react';
 import { Markdown } from 'react-markdown';
 
 export default function Post() {
@@ -17,7 +17,8 @@ export default function Post() {
             Aliquam sit amet dui hendrerit,
             eleifend tortor id, <Link variant="underline" href="#" color="teal.600">lobortis ipsum</Link>.
              Aenean <Kbd>Ctrl+Alt+Delete</Kbd> placerat tristique arcu, vitae accumsan nulla
-               et lacus vulputate, id feugiat turpis <Kbd>Ctrl+Alt+Delete</Kbd> feugiat. Aliquam consequat dui ac leo pretium tincidunt.<br /> <br />
+               et lacus vulputate, id feugiat turpis <Kbd>Ctrl+Alt+Delete</Kbd> feugiat.
+               <Image src='/logo-dark.PNG' /> Aliquam consequat dui ac leo pretium tincidunt.<br /> <br />
                 <Code>Nulla nec leo leo. Proin tristique diam nec ligula euismod</Code> posuere. Sed dapibus nunc non libero 
                 mattis, sed cursus ex ullamcorper. Aenean ut enim sed massa aliquet commodo. Mauris vehicula et
                  magna vitae pharetra. 
