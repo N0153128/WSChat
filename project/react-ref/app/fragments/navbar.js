@@ -4,6 +4,7 @@ import { PiGitlabLogoSimpleFill } from 'react-icons/pi';
 import { FaGithub } from 'react-icons/fa';
 import { GrTest } from 'react-icons/gr';
 import { GiInfo } from 'react-icons/gi';
+import { TiBusinessCard } from "react-icons/ti";
 
 export default function Navbar() {
     return (
@@ -29,6 +30,13 @@ export default function Navbar() {
                         <Breadcrumb.Item>
                             <Breadcrumb.Link href="https://github.com/N0153128/VoidBot">
                                 Source <FaGithub />
+                            </Breadcrumb.Link>
+                        </Breadcrumb.Item>
+                        <Breadcrumb.Separator />
+
+                        <Breadcrumb.Item>
+                            <Breadcrumb.Link href="#">
+                                Clients <TiBusinessCard/>
                             </Breadcrumb.Link>
                         </Breadcrumb.Item>
 

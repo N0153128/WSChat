@@ -18,7 +18,7 @@ export default function Post() {
             eleifend tortor id, <Link variant="underline" href="#" color="teal.600">lobortis ipsum</Link>.
              Aenean <Kbd>Ctrl+Alt+Delete</Kbd> placerat tristique arcu, vitae accumsan nulla
                et lacus vulputate, id feugiat turpis <Kbd>Ctrl+Alt+Delete</Kbd> feugiat.
-               <Image src='/logo-dark.PNG' /> Aliquam consequat dui ac leo pretium tincidunt.<br /> <br />
+               <Image src='https://media.istockphoto.com/id/814423752/photo/eye-of-model-with-colorful-art-make-up-close-up.jpg?s=612x612&w=0&k=20&c=l15OdMWjgCKycMMShP8UK94ELVlEGvt7GmB_esHWPYE=' /> Aliquam consequat dui ac leo pretium tincidunt.<br /> <br />
                 <Code>Nulla nec leo leo. Proin tristique diam nec ligula euismod</Code> posuere. Sed dapibus nunc non libero 
                 mattis, sed cursus ex ullamcorper. Aenean ut enim sed massa aliquet commodo. Mauris vehicula et
                  magna vitae pharetra. 
